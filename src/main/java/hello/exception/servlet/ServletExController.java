@@ -13,6 +13,9 @@ public class ServletExController {
 
     @GetMapping("/error-ex")
     public void errorEx() {
+        // 예와발생
+        // WAS가 예외 처리하는 오류 페이지 정보 확인
+        // 오류 페이지 출력하기 위해 /error-page/500 재호출
         throw new RuntimeException("예외 발생");
     }
 
